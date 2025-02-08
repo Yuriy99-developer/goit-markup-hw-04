@@ -75,6 +75,7 @@ ul {
 }
 
 .nav-link {
+    position: relative;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -87,11 +88,7 @@ ul {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link.current {
-    position: relative;
-}
-
-.nav-link.current::after {
+.nav-link::after {
     content: '';
     position: absolute;
     left: 0;
@@ -100,6 +97,14 @@ ul {
     height: 4px;
     border-radius: 2px;
     background-color: #404bbf;
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after,
+.nav-link.current::after {
+    opacity: 1;
 }
 
 .nav-link:active {
@@ -130,7 +135,11 @@ ul {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-logo:active, .nav-link:hover, .nav-link:focus, .contact-link:hover, .contact-link:focus {
+.header-logo:active,
+.nav-link:hover,
+.nav-link:focus,
+.contact-link:hover,
+.contact-link:focus {
     color: #404bbf;
 }
 
@@ -138,10 +147,10 @@ ul {
     background: #2e2f42;
     text-align: center;
     padding: 188px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/images/people-office-1.jpg");
-    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("./images/people-office-1.jpg");
+    background-size: 1440px, cover;
     background-position: center;
-    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .hero-title {
