@@ -147,8 +147,11 @@ ul {
     background: #2e2f42;
     text-align: center;
     padding: 188px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("./images/people-office-1.jpg");
-    background-size: 1440px, cover;
+    background-image: linear-gradient(to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url("/images/people-office-1.jpg");
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -182,8 +185,12 @@ ul {
     margin: 0 auto;
 }
 
-.hero-button:hover {
+.hero-button:active {
     background-color: #404bbf;
+}
+
+.hero-button:hover {
+    background-color: #4d5ae5;
 }
 
 .hero-button:focus {
@@ -218,6 +225,17 @@ ul {
 
 .advantages-item {
     width: calc((100% - 72px) / 4);
+}
+
+.advantages-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #8e8f99;
+    background-color: #f4f4fd;
+    border-radius: 1px;
+    padding: 24px 0;
+    margin-bottom: 8px;
 }
 
 .advantages-subtitle {
@@ -285,6 +303,37 @@ ul {
     text-align: center;
 }
 
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 0;
+    margin-top: 8px;
+}
+
+.social-item {
+    list-style: none;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon {
+    fill: #ffffff;
+}
+
+.social-link:hover {
+    background-color: #2e2f42;
+}
+
 .portfolio {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -333,6 +382,7 @@ ul {
 }
 
 .footer {
+    display: flex;
     background-color: #2e2f42;
     padding: 100px 0;
 }
@@ -358,4 +408,59 @@ ul {
     color: #f4f4fd;
     letter-spacing: 0.02em;
     max-width: 264px;
+}
+
+/* Контейнер соцмереж у footer */
+.footer-social {
+    margin-left: 80px;
+    /* Відступ справа від основного контейнера */
+}
+
+/* Заголовок "Social media" */
+.footer-social-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+/* Контейнер списку соцмереж */
+.footer-social-list {
+    display: flex;
+    gap: 16px;
+    /* Відстань між іконками */
+    padding: 0;
+    margin: 0;
+}
+
+/* Оформлення кожного елемента списку */
+.footer-social-item {
+    list-style: none;
+}
+
+/* Контейнер для іконки (круглий фон) */
+.footer-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
+    /* Фон */
+    border-radius: 50%;
+    /* Кругла форма */
+    transition: background-color 0.3s ease;
+}
+
+/* Колір іконки */
+.footer-social-icon {
+    fill: #ffffff;
+    /* Білий колір */
+}
+
+/* Ефект при наведенні */
+.footer-social-link:hover {
+    background-color: #2e2f42;
 }
