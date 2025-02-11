@@ -428,17 +428,14 @@ ul {
 .footer-social-list {
     display: flex;
     gap: 16px;
-    /* Відстань між іконками */
     padding: 0;
     margin: 0;
 }
 
-/* Оформлення кожного елемента списку */
 .footer-social-item {
     list-style: none;
 }
 
-/* Контейнер для іконки (круглий фон) */
 .footer-social-link {
     display: flex;
     justify-content: center;
@@ -446,19 +443,14 @@ ul {
     width: 40px;
     height: 40px;
     background-color: #4d5ae5;
-    /* Фон */
     border-radius: 50%;
-    /* Кругла форма */
     transition: background-color 0.3s ease;
 }
 
-/* Колір іконки */
 .footer-social-icon {
     fill: #ffffff;
-    /* Білий колір */
 }
 
-/* Ефект при наведенні */
 .footer-social-link:hover {
     background-color: #2e2f42;
 }
