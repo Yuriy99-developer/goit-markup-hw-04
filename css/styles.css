@@ -410,13 +410,12 @@ ul {
     max-width: 264px;
 }
 
-/* Контейнер соцмереж у footer */
+
 .footer-social {
     margin-left: 80px;
-    /* Відступ справа від основного контейнера */
 }
 
-/* Заголовок "Social media" */
+
 .footer-social-title {
     font-size: 16px;
     font-weight: 500;
@@ -426,7 +425,6 @@ ul {
     margin-bottom: 16px;
 }
 
-/* Контейнер списку соцмереж */
 .footer-social-list {
     display: flex;
     gap: 16px;
