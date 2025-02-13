@@ -73,6 +73,19 @@ ul {
     margin-right: 76px;
 }
 
+.header-nav .current {
+    position: relative;
+    padding: 24px 0;
+}
+
+.current {
+    color: #404bbf;
+}
+
+.current::after {
+    color: #404bbf;
+}
+
 .nav-list {
     display: flex;
     gap: 40px;
